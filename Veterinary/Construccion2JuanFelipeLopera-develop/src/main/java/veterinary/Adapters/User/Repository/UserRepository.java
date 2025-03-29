@@ -1,6 +1,7 @@
 
 package veterinary.Adapters.User.Repository;
 
+import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import veterinary.Adapters.Person.Entity.PersonEntity;
@@ -20,8 +21,7 @@ public interface UserRepository extends JpaRepository<UserEntity, Long>{
     
     public UserEntity findByUserName(String userName);
 
-
-    
+   Optional<UserEntity> findById(Long userId);
     
     
 }

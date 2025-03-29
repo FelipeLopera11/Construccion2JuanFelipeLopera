@@ -26,7 +26,7 @@ public class PersonAdapter implements PersonPort {
     @Autowired
     private PersonRepository personRepository;
     @Override
-    public boolean existsPerson(long id){
+    public boolean existPerson(long id){
         return personRepository.existsById(id);
     }
     

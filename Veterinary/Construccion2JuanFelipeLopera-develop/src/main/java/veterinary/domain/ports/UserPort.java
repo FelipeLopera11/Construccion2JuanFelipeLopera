@@ -14,7 +14,7 @@ public interface UserPort {
     public void saveUser(User user);
     public User findByPersonId(Person person);
     public User findByUserName(User user);
-    public User findByUserId(Long userId);
-    public User finByPersonId(User veterinarian);
+
+    public User findByUserId(long id);
     
 }

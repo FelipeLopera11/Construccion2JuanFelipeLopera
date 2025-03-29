@@ -47,7 +47,7 @@ public class VeterinarianService {
             }
 
     
-        User veterinarian = userPort.findByUserId(clinicHistory.getVeterinarian());
+       User veterinarian = userPort.findByUserId(clinicHistory.getVeterinarian().getId());
             if (veterinarian == null) {
                 throw new Exception("El veterinario no existe");
             }
@@ -133,7 +133,7 @@ public class VeterinarianService {
             }
 
  
-        User veterinarian = userPort.finByUserId(clinicHistory.getVeterinarian());
+        User veterinarian = userPort.findByUserId(clinicHistory.getVeterinarian().getId());
             if (veterinarian == null) {
                 throw new Exception("El veterinario asociado a la historia clínica no existe");
             }

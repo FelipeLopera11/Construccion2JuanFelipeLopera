@@ -75,13 +75,18 @@ public class UserAdapter implements UserPort {
     User user = new User();
     user.setId(userEntity.getUserId());
    
-    user.setUserId(userEntity.getPersonId());
-    user.setUserName(userEntity.getUserName());
-    user.setPassword(userEntity.getPassword()); 
-    user.setRole(userEntity.getRole()); 
+    user.setId(userEntity.getUserId()); 
+    user.setUserName(userEntity.getUserName()); // Usar setUser Name
+    user.setPassword(userEntity.getPassword()); // Usar setPassword
+    user.setRole(userEntity.getRole()); // Usar setRole
     
     return user;
 
 }
+
+    @Override
+    public User findByUserId(long id) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }
