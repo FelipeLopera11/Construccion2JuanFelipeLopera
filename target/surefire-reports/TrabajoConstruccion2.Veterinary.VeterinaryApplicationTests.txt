@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: TrabajoConstruccion2.Veterinary.VeterinaryApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.03 s -- in TrabajoConstruccion2.Veterinary.VeterinaryApplicationTests
